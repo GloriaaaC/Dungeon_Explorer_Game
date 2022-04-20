@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handleKeyPress" prefHeight="540.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/11.0.4" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.19161676646706588" layoutX="-2.0" layoutY="-1.0" prefHeight="544.0" prefWidth="755.0" style="-fx-border-color: grey;">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="399.0" prefWidth="422.0" style="-fx-border-color: black;">
+               <children>
+                  <ImageView fitHeight="575.0" fitWidth="269.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/information_bar.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="127.0" layoutX="6.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/infor.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="key" fitHeight="30.0" fitWidth="35.0" layoutX="38.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="weapon" fitHeight="30.0" fitWidth="35.0" layoutX="10.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="treasure" fitHeight="30.0" fitWidth="35.0" layoutX="11.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/gold_pile.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="potion" fitHeight="35.0" fitWidth="37.0" layoutX="37.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="count_treasure" fitHeight="28.0" fitWidth="57.0" layoutX="55.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="count_wearbility" fitHeight="28.0" fitWidth="57.0" layoutX="56.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="pause" fitHeight="37.0" fitWidth="82.0" layoutX="26.0" layoutY="307.0" onMouseClicked="#pauseHandler" onMouseEntered="#pauseHandler" onMouseExited="#pauseHandler" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/pause.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="mission" fitHeight="37.0" fitWidth="82.0" layoutX="27.0" layoutY="365.0" onMouseClicked="#missionHandler" onMouseEntered="#missionHandler" onMouseExited="#missionHandler" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/mission.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="rules" fitHeight="37.0" fitWidth="82.0" layoutX="27.0" layoutY="419.0" onMouseClicked="#rulesHandler" onMouseEntered="#rulesHandler" onMouseExited="#rulesHandler" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/rulename.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="571.0" prefWidth="676.0" style="-fx-border-color: black;">
+               <children>
+                  <ImageView fitHeight="638.0" fitWidth="689.0" layoutX="-13.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/playing.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER">
+    				<HBox alignment="CENTER">
+					<GridPane fx:id="squares" alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+					   <columnConstraints>
+					      <ColumnConstraints />
+					   </columnConstraints>
+					   <rowConstraints>
+					      <RowConstraints />
+					   </rowConstraints>
+					   <children>
+					
+					   </children>
+					</GridPane>
+				    </HBox>
+				</VBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/11.0.4" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="355.0" fitWidth="645.0" layoutX="-3.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/lose_background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="134.0" fitWidth="223.0" layoutX="53.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/you.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="129.0" fitWidth="237.0" layoutX="335.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/lose.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="62.0" fitWidth="199.0" layoutX="212.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/kuang.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="exit" fitHeight="52.0" fitWidth="165.0" layoutX="235.0" layoutY="237.0" onMouseClicked="#exitHandler" onMouseEntered="#exitHandler" onMouseExited="#exitHandler" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/exitname.png" />
+         </image></ImageView>
+   </children>
+</Pane>

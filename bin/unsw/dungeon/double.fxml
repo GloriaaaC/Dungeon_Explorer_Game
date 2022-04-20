@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handleKeyPress" prefHeight="551.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/11.0.4" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.16063348416289594, 0.8235294117647058" prefHeight="551.0" prefWidth="886.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="551.0" fitWidth="172.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/information_bar.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="playerImage" fitHeight="92.0" fitWidth="95.0" layoutX="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/human_new.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="52.0" layoutY="116.0" prefHeight="28.0" prefWidth="42.0" text="UP" textFill="#fceb2f">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="149.0" prefHeight="28.0" prefWidth="83.0" text="DOWN" textFill="#d9ba11">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="184.0" prefHeight="28.0" prefWidth="83.0" text="LEFT" textFill="#bccd60">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="34.0" layoutY="219.0" prefHeight="28.0" prefWidth="83.0" text="RIGHT" textFill="#ccda0a">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="346.0" text="Kill the Blue Hat" textFill="#e80d0d">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="3.0" layoutY="398.0" text="Get All Treasures" textFill="#e80d0d">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="51.0" layoutY="356.0" prefHeight="28.0" prefWidth="83.0" rotate="-21.0" text="Or" textFill="#4cc7a3">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="rules" fitHeight="67.0" fitWidth="109.0" layoutX="14.0" layoutY="471.0" onMouseClicked="#rulesHandler" onMouseEntered="#rulesHandler" onMouseExited="#rulesHandler" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/rulename.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" onKeyPressed="#handleKeyPress"  prefHeight="571.0" prefWidth="676.0">
+               <children>
+                  <ImageView fitHeight="571.0" fitWidth="676.0" layoutX="-11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/playing.png" />
+                     </image>
+                  </ImageView>
+                  <GridPane fx:id="squares"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+					   <columnConstraints>
+					      <ColumnConstraints />
+					   </columnConstraints>
+					   <rowConstraints>
+					      <RowConstraints />
+					   </rowConstraints>
+					   <children>
+					   
+					   </children>
+					</GridPane>  
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="550.0" prefWidth="173.0">
+               <children>
+                  <ImageView fitHeight="551.0" fitWidth="181.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/information_bar.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="138.0" layoutX="-1.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/kuang.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="enemyImage" fitHeight="92.0" fitWidth="83.0" layoutX="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/gnome.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="53.0" layoutY="205.0" prefHeight="28.0" prefWidth="83.0" text="D" textFill="#e5f569">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="54.0" layoutY="171.0" prefHeight="28.0" prefWidth="83.0" text="A" textFill="#a1ae0b">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="54.0" layoutY="138.0" prefHeight="28.0" prefWidth="83.0" text="S" textFill="#faff9d">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="52.0" layoutY="105.0" prefHeight="28.0" prefWidth="83.0" text="W" textFill="#e6f513">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="305.0" text="You can kill" textFill="#e80d0d">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="313.0" prefHeight="43.0" prefWidth="130.0" text="Human when" textFill="#e80d0d">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="335.0" prefHeight="43.0" prefWidth="130.0" text="Anytime (Mortal)" textFill="#e80d0d">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="41.0" layoutY="378.0" prefHeight="28.0" prefWidth="83.0" rotate="31.6" text="And" textFill="#4cc7a3">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="384.0" prefHeight="43.0" prefWidth="130.0" text="Prevent Human" textFill="#e80d0d">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="37.0" layoutY="404.0" prefHeight="43.0" prefWidth="130.0" text="Get Your" textFill="#e80d0d">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="425.0" prefHeight="43.0" prefWidth="130.0" text="Treasures" textFill="#e80d0d">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="exit" fitHeight="56.0" fitWidth="150.0" layoutY="471.0" onMouseClicked="#exitHandler" onMouseEntered="#exitHandler" onMouseExited="#exitHandler" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/exitname.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>
